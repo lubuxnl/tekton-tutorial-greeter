@@ -15,9 +15,7 @@ spec:
     spec:
       containers:
         - name: greeter
-          image: registry.local:5000/rhdevelopers/tekton-tutorial-greeter
-          # Uncomment below for OpenShift
-          # image: image-registry.openshift-image-registry.svc:5000/tektontutorial/greeter
+          image: image-registry.openshift-image-registry.svc:5000/tektontutorial/greeter
           resources:
             limits:
               memory: "750Mi"
